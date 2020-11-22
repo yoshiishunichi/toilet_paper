@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>トイレットペーパー</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">トイレットペーパーを引っ張ってください</h1>
+      <div id="paper_wrapper">
+
+        <img id="toilet_paper_top" src="img/toilet_paper1.jpg" alt="toilet_paper">
+
+        <ul id="imgList">
+          <li v-for="item in items" :key="item">
+            <img :src="item">
+          </li>
+        </ul>
+
+        <img id="toilet_paper_bottom" src="img/toilet_paper2.jpg" alt="toilet_paper">
+
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
