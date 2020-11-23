@@ -14,13 +14,17 @@
         <img id="toilet_paper_top" src="img/toilet_paper1.jpg" alt="toilet_paper">
 
         <ul id="imgList">
-          <li v-for="item in items" :key="item">
+          <li v-for="item in items">
             <img :src="item">
           </li>
         </ul>
 
         <img id="toilet_paper_bottom" src="img/toilet_paper2.jpg" alt="toilet_paper">
 
+      </div>
+      <div id="buttons">
+        <div class="btn" id="longer" @click="tapL">伸ばす</div>
+        <div class="btn" id="shorter" @click="tapS">縮める</div>
       </div>
     </div>
     <script src="js/main.js"></script>
